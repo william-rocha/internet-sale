@@ -1,0 +1,27 @@
+
+
+.mat-form-field {
+  background-color: transparent !important;
+}
+
+// .custom-container-user {
+//   background-image: url("../../assets/imagens/back-sempre.png");
+//   background-repeat: no-repeat;
+//   background-color: #cccccc;
+//   height: 500px; /* You must set a specified height */
+//   background-position: center; /* Center the image */
+//   background-repeat: no-repeat; /* Do not repeat the image */
+//   background-size: cover; /* Resize the background image to cover the entire container */
+// }
+
+.custom-form-user {
+  width: 50%;
+  margin: auto;
+
+}
+
+:host ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: transparent !important;
+}
+
+mat-form-field { mat-error { display: none !important; } mat-error:first-child { display: block !important; } }

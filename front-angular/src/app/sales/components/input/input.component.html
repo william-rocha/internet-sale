@@ -1,0 +1,8 @@
+<!-- <mat-grid-tile colspan="6" rowspan="1"> -->
+<mat-form-field appearance="fill" [hideRequiredMarker]="false" floatLabel="always" class="custom-input">
+  <mat-label>{{ label }}</mat-label>
+  <input matInput [formControl]="control" />
+  <mat-error *ngIf="control.hasError('required')">Campo obrigatório</mat-error>
+  <mat-error *ngIf="control.hasError('pattern')">CPF inválido</mat-error>
+</mat-form-field>
+<!-- </mat-grid-tile> -->

@@ -1,0 +1,15 @@
+<section>
+  <div class="example-button-row">
+    <button
+      mat-raised-button
+      [class.full-width]="true"
+      [class.tall-button]="true"
+      [color]="buttonType"
+      [ngStyle]="{ opacity: buttonDisable ? '0.3' : '' }"
+      [disabled]="buttonDisable"
+      (click)="buttonClick.emit()"
+    >
+      {{ text }}
+    </button>
+  </div>
+</section>

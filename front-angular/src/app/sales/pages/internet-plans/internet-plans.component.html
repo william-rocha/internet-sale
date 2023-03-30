@@ -1,0 +1,39 @@
+<mat-card class="custom-card">
+  <mat-card-header class="custom-header">
+    <mat-card-title>teste</mat-card-title>
+  </mat-card-header>
+  <mat-grid-list cols="3" rowspan="1" gutterSize="16px">
+    <mat-grid-tile *ngFor="let card of netPlans">
+      <mat-card class="custom-card">
+        <div
+          class="example-ripple-container mat-elevation-z4"
+          matRipple
+          [matRippleCentered]="false"
+          [matRippleDisabled]="false"
+          [matRippleUnbounded]="false"
+          [matRippleRadius]="500"
+          [matRippleColor]="'#f5f5f5a1'"
+        >
+          <mat-card-header class="custom-header">
+            <mat-card-title>{{ card.velocidade }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-subtitle class="custom-subtitle"
+            ><h1>{{ card.preco }}</h1></mat-card-subtitle
+          >
+          <mat-divider></mat-divider>
+
+          <mat-card-content>
+            <mat-radio-button value="option1"
+              ><div class="ellipsis-dot">
+                {{ card.descricao }}
+              </div></mat-radio-button
+            >
+          </mat-card-content>
+        </div>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-tile colspan="12" rowspan="1">
+    <button-custom [buttonType]="'warn'" [text]="'SALVAR'" (buttonClick)="submit()"></button-custom>
+  </mat-grid-tile>
+</mat-card>

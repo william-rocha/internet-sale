@@ -1,0 +1,21 @@
+.ellipsis-dot {
+  white-space: nowrap;
+  width: 155px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-subtitle {
+  height: 50px !important;
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+  justify-content: end;
+
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #AAAAAA;
+  font-weight: 400;
+}
+
+

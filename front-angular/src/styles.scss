@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+html, body { height: 100%; }
+body { margin: 0;  font-family: Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+
+  background-image: url("./app/./sales/assets/imagens/back-sempre.png");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-header.mat-stepper-horizontal {
+  width: 75%;
+  background-color: transparent;
+  margin: auto !important;
+  color: white !important;
+}
+.nav-header.mat-stepper-horizontal .mat-horizontal-stepper-header-container{
+  width: 58%;
+  background-color: #fc9208 !important;
+  margin: 45px auto !important;
+  color: white !important;
+}
+
+.custom-card {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 25px 0;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14) !important;
+  border-radius: 3px !important;
+  color: rgba(0,0,0, 0.87);
+  background: #fff;
+}
+
+.custom-header {
+  width: calc(44% + 20px);
+  height: 55px;
+  margin-top: -20px;
+  margin-left: 8px;
+  margin-right: -10px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 3px;
+  background: linear-gradient(60deg, #ffa726, #fb8c00);
+  box-shadow: 0 12px 20px -10px rgba(255, 152, 0, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(255, 152, 0, 0.2);
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Padrão */
+
+}
+
+.custom-input {
+  background-color: transparent !important;
+  width: 100%;
+  border: 10px !important;
+  padding: 10px !important;
+}
+.custom-input:focus {
+  background-color: transparent !important;
+}
+
+@import '@angular/material/theming';
+$primary: mat-palette($mat-grey, 600);
+$accent: mat-palette($mat-amber, A200, A100, A400);
+$warn: mat-palette($mat-red, A200, A100, A400);
+
+$theme: mat-light-theme(
+  $primary,
+  $accent,
+  $warn
+);
+
+@include angular-material-theme($theme);
